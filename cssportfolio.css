@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 50px;
+    text-align: center;
+    background: whitesmoke;
+    color: green
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: green;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+}
+
+.chase {
+    color: red
+}
