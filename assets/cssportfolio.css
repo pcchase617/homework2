@@ -1,24 +1,65 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 header {
+    height: auto;
+    font-size: 30px;
     padding: 50px;
-    text-align: center;
-    background: green;
-    color: whitesmoke
+    text-align: flex-start;
+    /*background: black;*/
+    color: whitesmoke;
+    font-style: italic;
+    font-size: large;
+    font-family: lulo-clean-w01-one-bold, sans-serif;
+}
+
+.parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
 }
 
 nav {
+    border: 1px solid #333;
+    padding: 0px;
+    margin: 0;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav, ul {
     display: flex;
-    justify-content: flex-end;
-    background-color: green;
+    justify-content: space-between;
+    align-items: center;
     font-family: fantasy;
+    list-style-type: none;
+    font-size: 30px;
+}
+
+nav ul li {
+    border-right: 1px solid #bbb;
+}
+
+nav ul li:last-child {
+    border-right:none;
 }
 
 nav a {
-    color: white;
     padding: 14px 20px;
+    color: white
+}
+
+nav a:hover {
+    color: rgb(137, 137, 146);
+    font-size: 24px;
+    text-shadow: 10px 10px black;
 }
 
 .chase {
@@ -26,5 +67,48 @@ nav a {
 }
 
 .sites {
-    
+    position: relative;
+    white-space: nowrap;
+    float: left;
+}
+
+p {
+    margin: 0 0 20px
+}
+
+.bgimg {
+    height: 100vh;
+    background-image: url('guitar_me.jpg');
+    background-size: cover;
+    margin-top: 60px;
+    max-width: 100%;
+}
+
+.name_title {
+    font-size: 4.5rem;
+    color: black;
+}
+
+.name_descr {
+    font-size: 2rem;
+    color:black;
+}
+
+.name_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.about_me {
+    font-size: 2rem;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.about_me_text {
+    text-align: flex-end;
 }
