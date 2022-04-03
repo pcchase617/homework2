@@ -1,27 +1,26 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    height: auto;
-    font-size: 30px;
-    padding: 50px;
-    text-align: flex-start;
-    /*background: black;*/
-    color: whitesmoke;
-    font-style: italic;
-    font-size: large;
-    font-family: lulo-clean-w01-one-bold, sans-serif;
-}
-
+/* nav bar */
 .parent {
     position: fixed;
     top: 0;
     left: 0;
     margin: auto;
     width: 100%;
+}
+
+header {
+    height: auto;
+    font-size: 30px;
+    text-align: flex-start;
+    color: whitesmoke;
+    font-style: italic;
+    font-size: large;
+    font-family: lulo-clean-w01-one-bold, sans-serif;
 }
 
 nav {
@@ -62,26 +61,28 @@ nav a:hover {
     text-shadow: 10px 10px black;
 }
 
-.chase {
-    color: red
-}
-
 .sites {
     position: relative;
     white-space: nowrap;
     float: left;
 }
 
-p {
-    margin: 0 0 20px
-}
-
+/* image header */
 .bgimg {
     height: 100vh;
     background-image: url('guitar_me.jpg');
     background-size: cover;
     margin-top: 60px;
     max-width: 100%;
+
+}
+
+/* description header */
+.name_text {
+    text-align: center;
+    justify-content: wrap;
+    position: relative;
+    top: 500px;
 }
 
 .name_title {
@@ -94,21 +95,73 @@ p {
     color:black;
 }
 
-.name_text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+#main {
+    margin-left: 0;
 }
 
-.about_me {
-    font-size: 2rem;
-    padding-top: 70px;
+.section-title {
+    padding-bottom: 30px;
+    background-color: #ff1852;
+}
+
+.section div {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin: 0 0;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
-.about_me_text {
-    text-align: flex-end;
+.content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+  }
+
+.content 
+  ul 
+  li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+.img-fluid {
+    max-width: 40%;
+    height: auto;
+    padding-top: 12px;
 }
+
+.text {
+    background-color: #ff1852;
+}
+
+/*Adjusts screen size*/
+  @media (max-width: 1199px) {
+    #header {
+      left: -300px;
+    }
+  
+    #main {
+      margin-left: 0;
+    }
+  }
